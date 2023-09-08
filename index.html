@@ -18,36 +18,39 @@
   <body>
     <!-- begin header -->
     <div class="container-fluid maindiv">
-      <div class="d-flex p-2 justify-content-between ">
-          <ul class="list-unstyled d-flex justify-content-start align-items-center ">
+      <div class="d-flex p-2 justify-content-between">
+        <ul
+          class="list-unstyled d-flex justify-content-start align-items-center"
+        >
+          <li class="px-1">
+            <i class="phone fa-solid fa-phone fa-xl" style="color: #004ab5"></i>
+            <span class="num">+216 90 111 222</span>
+          </li>
+          <li class="px-1">
+            <i class="fa-solid fa-envelope fa-xl" style="color: #004ab5"></i>
+            <span class="num">email@email.com</span>
+          </li>
+        </ul>
+
+        <div class="d-flex flex-row-reverse">
+          <ul
+            class="list-unstyled d-flex justify-content-start align-items-center"
+          >
+            <li class="px-1">
+              <i class="fa-brands fa-facebook fa-xl" style="color: #004ab5"></i>
+            </li>
+
             <li class="px-1">
               <i
-                class="phone fa-solid fa-phone fa-xl"
+                class="fa-brands fa-instagram fa-xl"
                 style="color: #004ab5"
               ></i>
-              <span class="num">+216 90 111 222</span>
-            </li>
-            <li class="px-1">
-              <i class="fa-solid fa-envelope fa-xl" style="color: #004ab5"></i>
-              <span class="num">email@email.com</span>
             </li>
           </ul>
-        
-        <div class="d-flex flex-row-reverse">
-          
-           <ul class="list-unstyled d-flex justify-content-start align-items-center "> 
-            <li class="px-1"><i class="fa-brands fa-facebook fa-xl" style="color: #004ab5"></i></li>
-          
-          
-           <li class="px-1"> <i class="fa-brands fa-instagram fa-xl" style="color: #004ab5"></i></li>
-          
-        </ul>
         </div>
-          
-
       </div>
     </div>
-    
+
     <div class="body">
       <nav>
         <div class="logo">
@@ -70,6 +73,43 @@
     <!-- end header -->
 
     <!-- begin page content -->
+    <app-header></app-header>
+    <!--carousel-->
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images\1.jpg" class="d-block w-100" alt="..." id="img" />
+        </div>
+        <div class="carousel-item">
+          <img src="images\2.jpg" class="d-block w-100" alt="..." id="img" />
+        </div>
+        <div class="carousel-item">
+          <img src="images\3.jpg" class="d-block w-100" alt="..." id="img" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <!-- end page content -->
 
