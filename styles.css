@@ -1,38 +1,35 @@
-.maindiv{
-    background-color: #94b6fd;
-    height: 45px;
-}
-.phone{
-    padding-left: 118px;
-}
-.num{
-    color: #004AB5;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+.maindiv{
+    background-color: #94b6fd;
+    /* height: 45px; */
+}
+
+.primary-color{
+    color: #004AB5;
+
+}
+.header-text{
+    color:"#003DA4"
+}
+
 nav{
     height: 80px;
     padding: 90px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 50px 0px 80px;
-    
-   
-
-  
-	
-   
+    padding: 0px 50px 0px 80px;  
 } 
 
 .logo{
     width: 120px;
     height: 120px;
-  
 }
 
 nav ul{
@@ -101,40 +98,39 @@ nav .menubar i{
 /*FOOTER*/
 footer{
     width: 100%;
-    position: absolute;
-  
+    /* position: absolute; */
     background: linear-gradient(to right,#718AFF,#4669DA);
     color: #fff;
-    padding: 100px 0 30px;
+    /* padding: 100px 0 30px; */
     border-top-left-radius: 125px ;
     font-size: 13px;
     line-height: 20px;
 }
-.row{
+/* .row{
  width: 85%;
  margin: auto;
  display:flex;
  flex-wrap: wrap;
- align-items: flex-start; 
+ align-items: flex-end; 
  justify-content: space-between;   
 
 }
 .col{
     flex-basis: 25%;
     padding: 30px;
-}
+} */
 .logoF{
     width: 120px;
     height: 120px;
 }
-.col h3{
+/* .col h3{
     width: fit-content;
     margin-bottom: 40px;
     position: relative ;
-}
+} */
 ul li{
     list-style: none;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
 }
 ul li a{
     text-decoration: none;
@@ -151,4 +147,12 @@ ul li a{
     color: #041d49;
 
     
+}
+.text{
+    width: 50%;
+    margin-left: 10%;
+}
+.apropos{
+    margin-left: 10%;
+    color: #003DA4;
 }
