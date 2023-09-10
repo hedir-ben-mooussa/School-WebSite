@@ -5,12 +5,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>School website</title>
-  <!-- style sheet  -->
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- layout style  -->
+  <link rel="stylesheet" href="css/layout-style.css" />
+  <!-- index style  -->
+  <link rel="stylesheet" href="css/index-style.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="/lib/bootstrap-5.3.1-dist/css/bootstrap.css" />
+  <!-- font awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/lib/bootstrap-5.3.1-dist/css/bootstrap.css" />
+
 </head>
 
 <body>
@@ -41,30 +47,33 @@
   </div>
   <!-- begin navbar -->
   <div>
-    <nav>
-      <div class="logo">
-        <img src="images\logo.png" alt="" class="logo" />
+    <nav class="nav ">
+      <div class="col-md-2 logo ">
+        <img src="images\logo.png" alt="" class=" logo" />
       </div>
       <input type="checkbox" id="click" />
       <label for="click" class="menubar">
         <i class="fa-solid fa-bars" style="color: #ff7300"></i>
       </label>
-      <ul style="text-align: center">
-        <li><a routerLink="/accuiel">Accueil</a></li>
-        <li><a href="#">L'école</a></li>
-        <li><a href="#">La vie à l'école</a></li>
-        <li><a href="#">Inscription</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <div class="col-md-7">
+        <ul style="text-align: center" class="nav-ul">
+          <li class="nav-li"><a href="/accuiel" class="nav-a">Accueil</a></li>
+          <li class="nav-li"><a href="#" class="nav-a">L'école</a></li>
+          <li class="nav-li"><a href="#" class="nav-a">La vie à l'école</a></li>
+          <li class="nav-li"><a href="#" class="nav-a">Inscription</a></li>
+          <li class="nav-li"><a href="#" class="nav-a">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
   <!-- end navbar -->
+
   <!-- end header -->
 
-  <!-- begin page content -->
+  <!-- begin home page -->
 
   <!--carousel-->
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade my-3" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="images\1.jpg" class="d-block w-100" alt="..." id="img" />
@@ -85,9 +94,12 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="container-fluid">
-    <h2 class="apropos">à props de notre école</h2>
-    <p class="text">
+  <!--End carousel-->
+
+  <!-- about -->
+  <div class="container-fluid my-5 ">
+    <h2 class="ms-5 my-4 fw-bold">A propos de notre école</h2>
+    <p class="ms-5 text">
       description de l'école description de l'école description de l'école
       description de l'écoledescription de l'école description de l'école
       description de l'école description de l'écoledescription de l'école
@@ -96,58 +108,46 @@
       description de l'école
     </p>
   </div>
-  <section class="explore"></section>
+  <!-- explore -->
+  <section class="explore d-flex align-items-center justify-content-center">
+    <div class="container-fluid">
+      <div class="text-center text-white py-5 ">
+        <h1 class="fw-bold ">Slogan de l'école</h1>
+        <p class="text-wrap">L'éducation est l'arme la plus puissante qu'on puisse utiliser pour changer le monde.</p>
+      </div>
+    </div>
+  </section>
+  <!-- activity -->
+  <section class="my-4 mx-5">
+    <div class="container-fluid row">
+      <div class="col-md-6">
+       
+        <h2 class="fw-bold">Nos activités</h2>
+        <p class=" ">À la maternelle, votre enfant apprend à connaître son corps et à améliorer ses habiletés
+          physiques. Pour ce faire, des jeux où il devra danser, courir, ramper et sauter pourront lui être proposés. Le
+          but est de le faire bouger pour développer sa motricité globale.</p>
+      </div>
+      <div class="col-md-6">
+        <div class="container text-center">
+          <div class="row row-cols-2">
+            <div class="col py-1"> 
+              <img src="images\bibliothéque.jpg" alt="bibliothéque" class="img-fluid h-100 w-75">
+            </div>
+            <div class="col py-1"> <img src="images\dessin.jpg" alt="dessin" class="img-fluid h-100  w-75">
+            </div>
+            <div class="col py-1"> <img src="images\sport.jpg" alt="sport" class="img-fluid h-100  w-75">
+            </div>
+            <div class="col py-1"> <img src="images\théatre.jpg" alt="théatre" class="img-fluid h-100  w-75">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- end page content -->
 
   <!-- begin footer -->
-  <!-- <footer>
-    <div class="container-fluid row ">
-      <div class="col">
-        <img src="images\logo.png" alt="logo" class="logoF" />
-        <p>
-          description de l'école description de l'école description de l'école
-          description de l'école description de l'école description de l'école
-          description de l'école
-        </p>
-        <div class="social-icons">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-        </div>
-      </div>
-      <div class="col">
-        <h3>Nos coordonnées</h3>
-        <ul class="list-unstyled d-flex flex-column mb-3">
-          <li class="d-flex pt-4">
-            <i class="fa-solid fa-location-dot fa-2xl p-2" style="color: #004ab5"></i>
-            <span>adresse de l'école</span>
-          </li>
-          <li class="d-flex pt-4">
-            <i class="phone fa-solid fa-phone fa-2xl p-2" style="color: #004ab5"></i>
-            <span>+216 00 000 000</span>
-          </li>
-
-          <li class="d-flex pt-4">
-            <i class="fa-solid fa-envelope fa-2xl" style="color: #004ab5"></i>
-            <span>email@email.com</span>
-          </li>
-        </ul>
-      </div>
-      <div class="col">
-        <h3>Liens utiles</h3>
-        <ul class="list-unstyled">
-          <li><a href="">Acceuil</a></li>
-          <li><a href="#">L'école</a></li>
-          <li><a href="#">La vie à l'école</a></li>
-          <li><a href="#">Inscription</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col"></div>
-    </div>
-  </footer> -->
-
-  <footer>
+  <footer class="footer">
     <div class="container-fluid">
       <div class=" row  px-5 py-5">
         <div class="col-md-4 offset-md-1">
@@ -174,7 +174,7 @@
               <i class="phone fa-solid fa-phone fa-2xl p-2" style="color: #004ab5"></i>
               <span>+216 00 000 000</span>
             </li>
-  
+
             <li class="d-flex pt-4">
               <i class="fa-solid fa-envelope fa-2xl" style="color: #004ab5"></i>
               <span>email@email.com</span>
@@ -183,18 +183,17 @@
         </div>
         <div class="col-md-2">
           <h3>Liens utiles</h3>
-          <ul class="list-unstyled">
-            <li><a href="">Acceuil</a></li>
-            <li><a href="#">L'école</a></li>
-            <li><a href="#">La vie à l'école</a></li>
-            <li><a href="#">Inscription</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="list-unstyled footer-ul">
+            <li class="footer-li my-2"><a href="" class="footer-a">Acceuil</a></li>
+            <li class="footer-li my-2"><a href="#" class="footer-a">L'école</a></li>
+            <li class="footer-li my-2"><a href="#" class="footer-a">La vie à l'école</a></li>
+            <li class="footer-li my-2"><a href="#" class="footer-a">Inscription</a></li>
+            <li class="footer-li my-2"><a href="#" class="footer-a">Contact</a></li>
           </ul>
         </div>
 
-    </div>
+      </div>
   </footer>
-  
   <!-- end footer -->
 
   <!-- bootstrap scripts -->
